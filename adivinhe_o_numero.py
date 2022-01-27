@@ -24,8 +24,6 @@ fim_tentativas = 0
 
 começar = input("Clique em quanquer tecla para começão")
 
-print(numero_secreto)
-
 if começar != None:
     print("Bem-vindos, o computador acaba de pensar em um número de 1 a 10"
         "\nTente adivinhar qual é:")
@@ -55,7 +53,7 @@ if começar != None:
         elif contador%2 == 0 and tentativas[1] > 0:
             print(f"Você tem \033[32m{tentativas[1]}\033[0;0m tentativas.")
             valor = input("Chute um número: ")
-            
+
             try:
                 valor = int(valor)
 
